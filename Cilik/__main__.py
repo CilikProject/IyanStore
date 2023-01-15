@@ -16,9 +16,9 @@ from Cilik import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
 from Cilik.helpers.misc import create_botlog, git, heroku
 
 MSG_ON = """
-✅ **Cilik-Ubot Activated.**
+✅ **Iyan Store - Ubot Activated.**
 **🏷️ Userbot Version -** `{}`
-**Ketik** `.cilik` **untuk Mengecheck Bot**
+**Ketik** `.alive` **untuk Mengecheck Bot**
 """
 
 
@@ -31,18 +31,19 @@ async def main():
             await bot.join_chat("SharingUserbot")
             await bot.join_chat("CilikProject")
             await bot.join_chat("CilikSupport")
+            await bot.join_chat("matstoreid")            
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER)
                 )
             except BaseException:
                 pass
-            LOGGER("Cilik").info(
+            LOGGER("IyanStore").info(
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("Cilik").info(f"Cilik-Ubot v{BOT_VER} ⚙️[⚡ Activated ⚡]")
+    LOGGER("IyanStore").info(f"IyanStore-Ubot v{BOT_VER} ⚙️[⚡ Activated ⚡]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
