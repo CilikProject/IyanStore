@@ -1,7 +1,7 @@
 {
-  "name": "Cilik-Ubot",
-  "description": "[Cilik-Ubot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
-  "logo": "https://telegra.ph/file/d20fc177ac0cb0136d942.jpg",
+  "name": "Iyan-Ubot",
+  "description": "[Iyan-Ubot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
+  "logo": "https://telegra.ph/file/01218f5131f24f049d12b.jpg",
   "stack": "heroku-22",
   "env": {
     "API_ID": {
