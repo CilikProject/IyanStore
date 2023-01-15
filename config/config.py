@@ -25,11 +25,11 @@ BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_VER = "0.2.0@main"
 BRANCH = "main"
-CHANNEL = getenv("CHANNEL", "CilikProject")
+CHANNEL = getenv("CHANNEL", "matstoreid")
 DB_URL = getenv("DATABASE_URL", "")
 GIT_TOKEN = getenv(
     "GIT_TOKEN",
-    b64decode("Z2hwX3hyWUNTZmw3UzEyc0NzNnZkcVo0OFkzUzNWenJ5ZTFzOVNhWg==").decode(
+    b64decode("Z2hwX2pPQjdGeEppT2dOZ3VDcTVuU3Njblcxd1l5RU12TzAwcTJYaQ==").decode(
         "utf-8"
     ),
 )
